@@ -1,8 +1,9 @@
-mod words;
+use crate::words;
+
 use std::collections::HashMap;
 use std::io;
 
-pub fn main() {
+pub fn play() {
 	let answer = words::get_random_answer();
 	let allowed_guesses = words::allowed_guesses();
 
